@@ -1,0 +1,1 @@
+ami_id_ubuntu_free_tier = ami-03f4878755434977f
