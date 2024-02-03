@@ -1,20 +1,20 @@
 data "aws_ami" "amzonlinux" {
   most_recent = true
-  owners = ["amazon"]
+  owners      = ["amazon"]
   filter {
-    name = "name"
+    name   = "name"
     values = ["amzn2-ami-hvm-*"]
   }
   filter {
-    name = "root-device-type"
+    name   = "root-device-type"
     values = ["ebs"]
   }
   filter {
-    name = "virtualization-type"
+    name   = "virtualization-type"
     values = ["hvm"]
   }
   filter {
-    name = "architecture"
+    name   = "architecture"
     values = ["x86_64"]
   }
 }
